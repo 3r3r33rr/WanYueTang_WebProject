@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.webproject.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.webproject.entity.User">
+        <id column="db_userid" property="id" />
+        <result column="db_pwd" property="pwd" />
+        <result column="db_username" property="name" />
+        <result column="db_phonnum" property="phone" />
+        <result column="db_sex" property="sex" />
+        <result column="db_flag" property="flag" />
+    </resultMap>
+
+    <select id="list" resultMap="BaseResultMap">
+        select * from users;
+    </select>
+
+</mapper>

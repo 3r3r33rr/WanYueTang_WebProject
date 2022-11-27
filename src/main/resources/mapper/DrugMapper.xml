@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.webproject.mapper.DrugMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.webproject.entity.Drug">
+        <id column="id" property="id" />
+        <result column="price" property="price" />
+        <result column="name" property="name" />
+        <result column="function" property="function" />
+        <result column="photo" property="photo" />
+        <result column="stock" property="stock" />
+        <result column="details" property="details" />
+        <result column="specification" property="specification" />
+        <result column="shelflife" property="shelflife" />
+        <result column="formulations" property="formulations" />
+        <result column="department" property="department" />
+        <result column="state" property="state" />
+        <result column="instructionbookid" property="instructionbookid" />
+    </resultMap>
+
+</mapper>
